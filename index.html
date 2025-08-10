@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Elementor Theme Styler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-styler-container">
+        <div class="controls-panel">
+            <h1>Live Theme Styler</h1>
+            <p>Enter a URL to instantly preview a new color palette.</p>
+            <input type="url" id="urlInput" placeholder="https://your-elementor-site.com">
+            <button id="loadSiteBtn">Load Site</button>
+
+            <div class="color-controls">
+                <label>Primary Color:</label>
+                <input type="color" id="primaryColor" value="#6EC1E4">
+
+                <label>Secondary Color:</label>
+                <input type="color" id="secondaryColor" value="#54595F">
+
+                <label>Text Color:</label>
+                <input type="color" id="textColor" value="#7A7A7A">
+
+                <label>Accent Color:</label>
+                <input type="color" id="accentColor" value="#61CE70">
+            </div>
+             <div class="loading-overlay" id="loadingOverlay">Loading...</div>
+        </div>
+
+        <div class="preview-panel">
+            <iframe id="siteFrame"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
